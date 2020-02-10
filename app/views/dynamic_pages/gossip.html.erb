@@ -1,0 +1,8 @@
+<h1>Voici le potin n°  <%= params[:gossip] %> ! <h1></br></br>
+
+<%= Gossip.find(params[:gossip]).title%></br></br>
+
+<%= Gossip.find(params[:gossip]).user.first_name %> 
+<%= Gossip.find(params[:gossip]).user.last_name %></br></br>
+
+<%= Gossip.find(params[:gossip]).content %></br></br>

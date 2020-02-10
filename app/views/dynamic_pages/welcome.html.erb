@@ -1,0 +1,17 @@
+<h1>Bienvenue <%= params[:user] %> </h1>
+<p>
+
+Ici c'est notre super site de potins, il est chouette, non ? </br></br>
+<% id = 1 %>
+<% Gossip.all.each do |potin| %>
+    <%= "Potin n° #{id}" %></br>
+    <%= potin.user.first_name %></br></br>
+    <% id += 1 %>
+<% end %>
+
+
+
+
+
+
+</p>
